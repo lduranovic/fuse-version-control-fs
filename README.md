@@ -1,3 +1,11 @@
+## FUSE Version-Control File System
+
+A virtual file system implementation using FUSE that provides basic functionalities for
+version control. All the files and folders created by the user are actually stored in a
+directory that is part of the inherent file system, but FUSE makes it seem like everything
+is stored in the mounting point. Most of the basic Linux system calls (`mkdir`, `readdir`, etc.)
+were overwritten to make everything work and to provide the necessary experience for the user.
+
 ### Proper usage for the version dump script
 
 The user ought to make the following call:
